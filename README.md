@@ -8,9 +8,11 @@ To use, simply press fit each key into its corresponding key profile; it should 
 
 ## Printing
 
-[**Go here and hit "Download Raw File"**](/Resistor%20Keycard.stl)
+[**Rigid Filament (PLA, PETG, ABS, etc)**](/Resistor%20Keycard%20Rigid.stl) | [**Flexible Filament (TPU)**](/Resistor%20Keycard%20Flexible.stl)
 
-The only prerequisite to print is that the layer height is set to 0.2mm or lower (by default). The thin card base benefits greatly from having two layers or more for strength. In terms of material choice, anything should be fine. The initial Craft Night prototypes were done in TPU and worked well enough, but all of the following versions were tested in both PLA and PETG. 
+There's two versions of the model to accomodate for different material properties. The only difference between them is the tolerance of the Medeco key hole post; the rigid version has a tolerance of 0.05mm (post is slightly smaller than its nominal size), whereas the flexible version has a tolerance of -0.09mm (post is slightly larger). Both iterations should result in a fairly firm press fit where the key shouldn't fall out.
+
+As for other settings, the only important thing to note is how many base layers are present. You want at least two solid base layers, which you should get if you use 0.2mm thick layers or thinner. If you're looking to use thicker base layers, such as 0.3mm layers, open the Fusion file, adjust `card_base_layer` to a multiple of your layer height, and re-export the mesh. 
 
 ## Modifying
 
